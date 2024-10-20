@@ -13,15 +13,12 @@ type Props = {
 const layout = ({ children, params }: Props) => {
   return (
     <div className="h-screen overflow-hidden">
-      <Sidebar id={params.userId} />
-      <div className="md:pl-[300px]">
         <Navigation isHero={false} />
         <div className="relative">
           <BlurPage>
             <div className="mb-12">{children}</div>
           </BlurPage>
         </div>
-      </div>
     </div>
   );
 };

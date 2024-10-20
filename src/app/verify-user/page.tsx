@@ -13,10 +13,10 @@ const SignUpForm = async () => {
     const user = await initOrUpdateUserData({
       email: authUser.emailAddresses[0].emailAddress,
     });
-    return redirect(`/${user?.id}/dashboard`);
+    return redirect(`/${user?.id}/chat`);
   }
 
-  return redirect(`/${user?.id}/dashboard`);
+  return redirect(`/${user?.id}/chat`);
 };
 
 export default SignUpForm;

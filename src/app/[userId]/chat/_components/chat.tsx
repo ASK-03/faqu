@@ -31,10 +31,9 @@ const Chat = ({ userId, initialMessages }: Props) => {
     <div className="">
       <Card className="h-[800px] w-full overflow-scroll">
         <CardHeader>
-          <CardTitle>Chat with SOMU</CardTitle>
+          <CardTitle>Chat with FAQU</CardTitle>
           <CardDescription>
-            A chat bot to share your problems! If you don;t want to talk to
-            someone.
+            A chat bot to help you with your queries
           </CardDescription>
         </CardHeader>
         <CardContent>

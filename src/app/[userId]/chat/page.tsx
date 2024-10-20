@@ -17,7 +17,7 @@ const page = async ({ params }: Props) => {
     content: m.message,
   }));
   return (
-    <div>
+    <div className="mx-[20vw]">
       <Chat userId={params.userId} initialMessages={initialMessages} />
     </div>
   );
