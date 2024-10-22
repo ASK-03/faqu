@@ -33,7 +33,7 @@ const Chat = ({ userId, initialMessages }: Props) => {
         <CardHeader>
           <CardTitle>Chat with SOMU</CardTitle>
           <CardDescription>
-            A chat bot to share your problems! If you don;t want to talk to
+            A chat bot to share your problems! If you dont want to talk to
             someone.
           </CardDescription>
         </CardHeader>

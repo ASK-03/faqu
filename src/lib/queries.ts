@@ -55,7 +55,6 @@ export const getChats = async (userId: string) => {
 
   return chats;
 };
-
 export const saveChat = async (
   userId: string,
   message: string,
