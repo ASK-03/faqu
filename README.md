@@ -28,24 +28,24 @@ This is a chatbot for answering FAQs related to SARAS AI Institute.
   - shadcn
 
 ## Installation
-  
-- npm i
+```bash
+npm i
 
-- ollama pull mxbai-embed-large
+ollama pull mxbai-embed-large
 
-- sudo docker compose up -d
+sudo docker compose up -d
 
-- npx prisma generate
-- npx prisma db push
+npx prisma generate
+npx prisma db push
 
-- sudo docker pull qdrant/qdrant
+sudo docker pull qdrant/qdrant
 
-- sudo docker run -p 6333:6333 -p 6334:6334 \
-    -v $(pwd)/qdrant_storage:/qdrant/storage:z \
-    qdrant/qdrant
+sudo docker run -p 6333:6333 -p 6334:6334 \
+  -v $(pwd)/qdrant_storage:/qdrant/storage:z \
+  qdrant/qdrant
 
-- npm run dev
-
+npm run dev
+```
 ## Contributors
 
 - Abhishek Singh Kushwaha
