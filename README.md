@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# FAQ-U Chat-bot for SARAS-AI
 
-## Getting Started
+## Table of Contents
+- [Introduction](#introduction)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Contributors](#contributors)
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Introduction
+This is a chatbot for answering FAQs related to SARAS AI Institute.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
+- Functional Chatbot.
+- Retrieval Augmented Generation using VectorDB.
+- Authentication.
+- Personalised chat saving using Relational DB.
+- Easily Integrable Chatbot
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Technologies Used
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+  - next.js
+  - prisma orm
+  - qdrant vector-db
+  - typescript
+  - tailwindcss
+  - shadcn
 
-## Learn More
+## Installation
+  
+- npm i
 
-To learn more about Next.js, take a look at the following resources:
+- ollama pull mxbai-embed-large
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- sudo docker compose up -d
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- npx prisma generate
+- npx prisma db push
 
-## Deploy on Vercel
+- sudo docker pull qdrant/qdrant
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- sudo docker run -p 6333:6333 -p 6334:6334 \
+    -v $(pwd)/qdrant_storage:/qdrant/storage:z \
+    qdrant/qdrant
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- npm run dev
+
+## Contributors
+
+- Abhishek Singh Kushwaha
+- Atharva Bhatnagar
+- Ayudh Avinash Abhale
+- Nikhil Kumar Shrey
