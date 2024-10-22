@@ -9,11 +9,14 @@ echo "------ Generating the Prisma client ------"
 npx prisma generate
 npx prisma db push
 
-echo "------ Starting the application ------"
-npm run dev
-
 sudo docker pull qdrant/qdrant
+
+ollama pull mxbai-embed-large
 
 sudo docker run -p 6333:6333 -p 6334:6334 \
     -v $(pwd)/qdrant_storage:/qdrant/storage:z \
     qdrant/qdrant
+
+echo "------ Starting the application ------"
+npm run dev
+

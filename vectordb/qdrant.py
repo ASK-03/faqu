@@ -95,7 +95,7 @@ def embed_and_save(file_path: str):
 def main():
     try:
         create_collection()  # Create the collection
-        embed_and_save("/home/atharva/sarc/faqu/vectordb/faqs.json")  # Embed and save the data points
+        embed_and_save("/home/ask-03/Abhishek/Important/projects/hackathons/faqu/vectordb/faqs.json")  # Embed and save the data points
     except Exception as e:
         print(f"Error in main process: {e}")
 
