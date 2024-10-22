@@ -31,8 +31,8 @@ const Chat = ({ userId, initialMessages }: Props) => {
     <div className="">
       <Card className="h-[800px] w-full overflow-scroll">
         <CardHeader>
-          <CardTitle>Chat with FAQU</CardTitle>
-          <CardDescription>
+          <CardTitle>Chat with <span className="text-orange-500">FAQ-U</span></CardTitle>
+          <CardDescription className="">
             A chat bot to help you with your queries
           </CardDescription>
         </CardHeader>
@@ -54,7 +54,7 @@ const Chat = ({ userId, initialMessages }: Props) => {
                       "whitespace-pre-wrap flex sm:max-w-[400px] md:max-w-[800px] min-w-[300px] w-fit bg-secondary text-secondary-foreground my-2 p-4 rounded-xl backdrop-blur-sm"
                     )}
                   >
-                    <div className="mr-4 bg-secondary my-auto">
+                    <div className="mr-4 bg-secondary my-auto text-orange-600">
                       {m.role === "user" ? (
                         <User width={24} height={24} />
                       ) : (
@@ -84,7 +84,7 @@ const Chat = ({ userId, initialMessages }: Props) => {
                 type="submit"
                 className="px-6 py-2 bg-secondary rounded-md"
               >
-                <Send className="text-secondary-foreground" />
+                <Send className="text-[#D2FF72]" />
               </button>
             </form>
           </div>

@@ -20,27 +20,27 @@ const Navigation = async ({ isHero, userId }: Props) => {
         )}
       >
         <aside className={cn("flex items-center gap-2")}>
-          <span className="text-xl font-bold">FAQU</span>
+          <span className="text-2xl font-black text-orange-500">FAQ-U</span>
         </aside>
 
         <aside className="flex gap-2 items-center">
           {isHero && (
             <Link href="/verify-user">
-              <Button className="px-4 py-2 rounded-full bg-secondary-foreground text-secondary text-sm font-semibold">
-                Dashboard
+              <Button className="px-4 py-2 rounded-full bg-[#D2FF72] text-black text-sm font-semibold">
+                Chat
               </Button>
             </Link>
           )}
           {!isHero && (
             <Link href="/">
-              <Button className="px-4 py-2 rounded-full bg-secondary-foreground hover: text-secondary text-sm font-semibold">
+              <Button className="px-4 py-2 rounded-full bg-[#D2FF72] hover: text-black text-sm font-semibold">
                 Back to Landing Page
               </Button>
             </Link>
           )}
           <SignedOut>
             <SignInButton>
-              <button className="px-4 py-2 rounded-full bg-secondary-foreground text-secondary text-sm font-semibold">
+              <button className="px-4 py-2 rounded-full bg-[#D2FF72] text-black text-sm font-semibold">
                 Sign In
               </button>
             </SignInButton>
